@@ -15,7 +15,7 @@ if "table_values" not in st.session_state:
 st.title("IAAF Scoring Calculator")
 
 models = get_models()
-meters_events = ["LJ", "TJ", "HJ" "SP", "DT", "HT", "JT", "PV"]
+meters_events = ["LJ", "TJ", "HJ", "SP", "DT", "HT", "JT", "PV"]
 points_events = ["Decathlon", "Heptathlon"]
 
 gender = st.selectbox("Choose gender", ("male", "female"), format_func=str.capitalize)
