@@ -14,6 +14,27 @@ if "table_values" not in st.session_state:
 
 st.title("IAAF Scoring Calculator")
 
+st.markdown(
+    """
+            ## Description
+
+            This app allows you to calculate the points corresponding to a
+            performance or the performance corresponding to a given number of points
+            in the IAAF scoring tables.
+
+            The IAAF scoring tables are used to calculate the points corresponding
+            to a performance in a given event.
+            The formulas are not public, but there are official documents where these
+            tables are posted.
+
+            This calculator uses the formulas calculated by polinomial regression
+            using the data from the official 2022 tables, which are the most recent
+            available as of 2023.
+
+            They can be found in the [following link](https://worldathletics.org/news/news/scoring-tables-2022)
+            """
+)
+
 models = get_models()
 meters_events = ["LJ", "TJ", "HJ", "SP", "DT", "HT", "JT", "PV"]
 points_events = ["Decathlon", "Heptathlon"]
