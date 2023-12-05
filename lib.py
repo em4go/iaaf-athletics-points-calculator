@@ -10,6 +10,18 @@ def get_models():
     return models
 
 
+def format_secs(time):
+    return f"{time:.2f}".ljust(2, "0")
+
+
+def format_mins(time):
+    return str(int(time)).rjust(2, "0")
+
+
+def format_hours(time):
+    return str(int(time)).rjust(2, "0")
+
+
 def calculate_performance(coeffs, points):
     a, b, c = coeffs  # ax**2 + bx + c = y
     # ax**2 + bx + c - y = 0
